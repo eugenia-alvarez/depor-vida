@@ -1,0 +1,115 @@
+.navbar {
+    background: rgb(31,31,31);
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+  }
+  
+  .navMenu {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    gap: 2rem;
+  }
+  
+  .navItem {
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+  }
+  
+  
+  .navItem a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700; 
+    font-size: 2rem;
+  }
+  
+  .navItem a:hover{
+    cursor: pointer;
+    color: var(--primary);
+    transition-duration: 300ms;
+  }
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .menuIcon {
+      display: block;
+    }
+  
+    .navMenu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: rgba(245,153,17,255);
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+    }
+  
+    .navItem {
+      margin: 1rem 0;
+    }
+  
+    .navItem a{
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700; 
+    }
+    
+
+  
+    .navMenu.active {
+      display: flex;
+    }
+  
+    .menuIcon.close .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menuIcon.close .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menuIcon.close .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* Agrega esta regla CSS */
+  .navMenu.active + .navbarContainer .navbar {
+    display: none;
+  }
+  }
+  

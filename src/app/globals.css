@@ -1,0 +1,47 @@
+:root{
+  --primary:  #f59911;
+  --secundary: rgb(31,31,31);
+}
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 1.5;
+  background-color: #808080;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+[class*="contenedor"], 
+main {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+
+.contenedorr{
+  width: 50%;
+}
+
+.contacto,
+.fondo,
+.ubicacion{
+  scroll-behavior: smooth; /* Desplazamiento suave entre secciones */
+}

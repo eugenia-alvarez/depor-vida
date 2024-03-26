@@ -1,0 +1,20 @@
+.ubicacion{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: rgba(31,31,31,1);
+
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgba(31, 31, 31, 0.493),  rgba(245,153,17,1)) 1;
+    display: inline-block;
+}
+
+.mapa{
+    display: block;
+}

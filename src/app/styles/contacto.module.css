@@ -1,0 +1,77 @@
+.contacto{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto span{
+    font-weight: bold;
+}
+
+
+.contactoContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .button {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    background-color: var(--primary);
+   /* background: linear-gradient(31deg, rgba(31,31,31,1) 12%, rgba(245,153,17,1) 100%);*/
+    background-size: 400% 400%;
+    animation: cambio-de-color 15s ease infinite;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Transición suave de 0.5 segundos */
+  }
+  
+  @keyframes cambio-de-color {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  .button a{
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--secundary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+
+  }
+
+  .button:hover{
+    background-color:#fff ;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img{
+    margin-right: 15px;
+   
+  }
+  

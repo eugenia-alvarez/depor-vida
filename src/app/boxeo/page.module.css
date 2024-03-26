@@ -1,0 +1,22 @@
+.contenido{
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.boton{
+  
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--secundary);
+    font-weight: bold;
+
+}

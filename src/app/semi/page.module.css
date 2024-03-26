@@ -1,0 +1,107 @@
+.semi,
+.infoProfe{
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+
+}
+
+.semi h2{
+    text-transform: uppercase;
+    color: var(--secundary);
+
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgba(31, 31, 31, 0.493),  rgba(245,153,17,1)) 1;
+    display: inline-block;
+}
+
+.contenido{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;   
+    
+    max-width: 800px;
+
+}
+/*
+@media(min-width: 700px){
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .video{
+        grid-column: 1;
+    
+    }
+    
+    .descripcion{
+        grid-column: 2;
+    
+    }
+}
+*/
+.video{
+    justify-content: center;
+    align-items: center;
+   
+    height: auto;
+    width: 100%;
+}
+
+.video video source{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+.descripcion{
+    margin-bottom: 3rem;
+}
+.descripcion p{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+.infoProfe{
+    display: block;
+    gap: 2rem;
+}
+.infoProfe h3{
+    text-transform: uppercase;
+    color: var(--secundary);
+
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgba(31, 31, 31, 0.493),  rgba(245,153,17,1)) 1;
+    display: inline-block;
+}
+
+
+
+.contenidoBoton{
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.boton{
+  
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--secundary);
+    font-weight: bold;
+
+}
